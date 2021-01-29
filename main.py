@@ -40,7 +40,7 @@ app = Flask(__name__)
 
 @app.route("/",methods=["GET"])
 def index():
-    return render_template("test.html",sentiment=100*100)
+    return render_template("test.html")
 
 @app.route("/analysis",methods=["GET"])
 def calc():
@@ -57,7 +57,24 @@ def calc():
     print("Percentage :{}%".format(x*100))
     file.close()
     return str(x*100)
+
+@app.route("/analysis2",methods=["GET"])
+def calc2():
+    l1 = []
+    file = open(r"dataset1.txt","r+")
+    for line in file.read().split('\n'):
+        x = clean_text(line)
+        analysis = TextBlob(x)
+        #correct spelling
+        analysis = analysis.correct()
+        s=analysis.sentiment.polarity   
+        l1.append(s)
+    x=statistics.mean(l1)
+    print("Percentage :{}%".format(x*100))
+    file.close()
+    return str(x*100)
     
+
 
 if __name__=="__main__":
     app.run(port=3000)

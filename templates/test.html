@@ -151,6 +151,7 @@
                             </div>
                             <a href="#" class="p-cnt-v">
                                 <img src="photos/poem2.jpeg" height="400px">
+                                <div id="bar2">Calculating Result....</div>
                             </a>
                             <div>
                                 <div class="p-acts">
@@ -182,6 +183,10 @@
         $.get("/analysis",{},(data,status)=>{
         $("#bar").html('<div style="margin-top: 0%; margin-bottom: 2%;"> <progress value="'+Math.round(Number(data))+'" max="100"></div>');
     })
+
+    // $.get("/analysis2",{},(data,status)=>{
+    //     $("#bar2").html('<div style="margin-top: 0%; margin-bottom: 2%;"> <progress value="'+Math.round(Number(data))+'" max="100"></div>');
+    // })
     })
    
     function myFunction1() {
