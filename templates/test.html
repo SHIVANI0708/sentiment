@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <header>
+            <div class="tb">
+                <div class="td" id="logo">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div class="td" id="search-form">
+                    <form method="get" action="#">
+                        <input type="text" placeholder="Search Facebook">
+                        <button type="submit"><i class="material-icons">search</i></button>
+                    </form>
+                </div>
+                <div class="td" id="f-name-l"><span>Dichtung_sr</span></div>
+                <div class="td" id="i-links">
+                    <div class="tb">
+                        <div class="td" id="m-td">
+                            <div class="tb">
+                                <span class="td"><i class="material-icons">person_add</i></span>
+                                <span class="td"><i class="material-icons">chat_bubble</i></span>
+                                <span class="td m-active"><i class="material-icons">notifications</i></span>
+                            </div>
+                        </div>
+                        <div class="td">
+                            <a href="#" id="p-link">
+                                <img src="photos/logo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main-content">
+            <div class="tb">
+                        <div id="c-c-main">
+                            <div class="tb">
+                                <div class="td" id="p-c-i"><img src="photos/logo.jpg" alt="Profile pic"></div>
+                                <div class="td" id="c-inp">
+                                    <input type="text" placeholder="  What's on your mind?" style="border-radius: 25px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="post">
+                            <div class="tb">
+                                <a href="#" class="td p-p-pic"><img src="photos/logo2.jpg" alt="Rajeev's profile pic"></a>
+                                <div class="td p-r-hdr">
+                                    <div class="p-u-info">
+                                        <a href="#">floraa</a> shared a memory with <a href="#">Dichtung_sr</a> 
+                                    </div>
+                                    <div class="p-dt">
+                                        <i class="material-icons">calendar_today</i>
+                                        <span>January 28, 2021</span>
+                                    </div>
+                                </div>
+                                <div class="td p-opt"><i class="material-icons">keyboard_arrow_down</i></div>
+                            </div>
+                            <a href="#" class="p-cnt-v">
+                                <img src="photos/poem1.jpeg" height="400px">
+                            </a>
+                            <div id="bar">Calculating Result....</div>
+                           
+                            
+                                <div class="p-acts">
+                                    <div class="p-act like"><i class="material-icons" style="color: blue;">thumb_up_alt</i><span>57</span></div>
+                                    <div class="p-act comment">
+                                        <button onclick="myFunction1()" style="cursor: pointer">
+                                            <i class="material-icons">comment</i><span>25</span>
+                                        </button>
+                                    </div>
+                                    <div class="p-act share"><i class="material-icons">reply</i></div>
+                                
+                                <div style="display: none;" id="demo1">
+                                    <hr>
+                                       <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%;">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%;">i like the poem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content" style="margin-top: 2%;">
+                        <div class="post">
+                            <div class="tb">
+                                <a href="#" class="td p-p-pic"><img src="photos/logo2.jpg" alt="Rajeev's profile pic"></a>
+                                <div class="td p-r-hdr">
+                                    <div class="p-u-info">
+                                        <a href="#">Shivani Rawat</a> shared a memory with <a href="#">Dichtung_sr</a> 
+                                    </div>
+                                    <div class="p-dt">
+                                        <i class="material-icons">calendar_today</i>
+                                        <span>January 28, 2021</span>
+                                    </div>
+                                </div>
+                                <div class="td p-opt"><i class="material-icons">keyboard_arrow_down</i></div>
+                            </div>
+                            <a href="#" class="p-cnt-v">
+                                <img src="photos/poem3.jpg" height="400px">
+                            </a>
+                            <div>
+                                <div class="p-acts">
+                                    <div class="p-act like"><i class="material-icons">thumb_up_alt</i><span>57</span></div>
+                                    <div class="p-act comment">
+                                        <button onclick="myFunction2()">
+                                            <i class="material-icons">comment</i><span>25</span>
+                                        </button>
+                                    </div>
+                                    <div class="p-act share"><i class="material-icons">reply</i></div>
+                                </div>
+                                <div style="display: none;" id="demo2">
+                                    <hr>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%;">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%;">i like the poem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content" style="margin-top: 2%;">
+                        <div class="post">
+                            <div class="tb">
+                                <a href="#" class="td p-p-pic"><img src="photos/logo2.jpg" alt="Rajeev's profile pic"></a>
+                                <div class="td p-r-hdr">
+                                    <div class="p-u-info">
+                                        <a href="#">Shivani Rawat</a> shared a memory with <a href="#">Dichtung_sr</a> 
+                                    </div>
+                                    <div class="p-dt">
+                                        <i class="material-icons">calendar_today</i>
+                                        <span>January 28, 2021</span>
+                                    </div>
+                                </div>
+                                <div class="td p-opt"><i class="material-icons">keyboard_arrow_down</i></div>
+                            </div>
+                            <a href="#" class="p-cnt-v">
+                                <img src="photos/poem2.jpeg" height="400px">
+                            </a>
+                            <div>
+                                <div class="p-acts">
+                                    <div class="p-act like"><i class="material-icons">thumb_up_alt</i><span>57</span></div>
+                                    <div class="p-act comment">
+                                        <button onclick="myFunction3()">
+                                            <i class="material-icons">comment</i><span>25</span>
+                                        </button>
+                                    </div>
+                                    <div class="p-act share"><i class="material-icons">reply</i></div>
+                                </div>
+                                <div style="display: none;" id="demo3">
+                                    <hr>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%; ">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%;">i like the poem</span>
+                                        <span style="display: block; background-color: #e3e5e8; border-radius: 25px; padding: 2%; margin-left: 2%; margin-top: 2%;">i like the poem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+<script type="text/javascript">
+    window.addEventListener("load",()=>{
+        $.get("/analysis",{},(data,status)=>{
+        $("#bar").html('<div style="margin-top: 0%; margin-bottom: 2%;"> <progress value="'+Math.round(Number(data))+'" max="100"></div>');
+    })
+    })
+   
+    function myFunction1() {
+  document.getElementById("demo1").style.display = "block";
+}
+function myFunction2() {
+  document.getElementById("demo2").style.display = "block";
+}
+function myFunction3() {
+  document.getElementById("demo3").style.display = "block";
+}
+    var date = new Date();
+    document.getElementById('curr-year').innerHTML = date.getFullYear();
+</script>
+</html>

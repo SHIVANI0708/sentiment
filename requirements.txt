@@ -1,0 +1,8 @@
+click==7.1.2
+docutils==0.16
+joblib==1.0.0
+nltk==3.5
+regex==2020.11.13
+statistics==1.0.3.5
+textblob==0.15.3
+tqdm==4.56.0
